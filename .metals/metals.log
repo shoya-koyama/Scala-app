@@ -1,0 +1,705 @@
+2024.03.11 21:24:09 INFO  Started: Metals version 1.2.2 in folders 'C:\Users\iniad\workspace\mojipic' for client Visual Studio Code 1.87.1.
+21:24:10.215 [pool-1-thread-5] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+21:24:10.219 [pool-1-thread-5] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+21:24:10.219 [pool-1-thread-5] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+21:24:10.223 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+21:24:10.223 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@28c97a5 ...
+21:24:10.223 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+21:24:10.223 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+21:24:10.223 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@28c97a5 ...
+21:24:10.223 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/iniad/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+21:24:10.228 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+21:24:10.228 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+21:24:10.228 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+21:24:10.228 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+21:24:10.228 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+21:24:10.228 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+21:24:10.230 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+21:24:10.230 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+21:24:10.232 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+21:24:10.232 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+21:24:10.232 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+21:24:10.314 [pool-1-thread-5] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:C:\Users\iniad\workspace\mojipic\.metals\metals (H2 2.2)
+21:24:10.314 [pool-1-thread-5] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+21:24:10.315 [pool-1-thread-5] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+21:24:10.316 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+21:24:10.316 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+21:24:10.320 [pool-1-thread-5] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+21:24:10.321 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+21:24:10.322 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+21:24:10.331 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+21:24:10.335 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+21:24:10.346 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+21:24:10.346 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+21:24:10.346 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+21:24:10.346 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+21:24:10.346 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+21:24:10.349 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+21:24:10.349 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+21:24:10.349 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+21:24:10.349 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+21:24:10.349 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+21:24:10.351 [pool-1-thread-5] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+21:24:10.355 [pool-1-thread-5] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.022s)
+21:24:10.358 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+21:24:10.362 [pool-1-thread-5] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+21:24:10.365 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing  ...
+21:24:10.372 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 1: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+21:24:10.372 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 14: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+21:24:10.372 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+21:24:10.376 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+21:24:10.376 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+21:24:10.380 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+21:24:10.380 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Created Schema History table "PUBLIC"."flyway_schema_history"
+21:24:10.389 [pool-1-thread-5] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+21:24:10.389 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V1__Create_tables.sql ...
+21:24:10.391 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+21:24:10.392 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 12: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+21:24:10.393 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 19: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+21:24:10.394 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 27: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+21:24:10.394 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 34: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+21:24:10.395 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "1 - Create tables" ...
+21:24:10.396 [pool-1-thread-5] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - Create tables"
+21:24:10.397 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+21:24:10.398 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+21:24:10.398 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+21:24:10.399 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+21:24:10.399 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+21:24:10.400 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+21:24:10.400 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+21:24:10.401 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+21:24:10.401 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+21:24:10.402 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+21:24:10.402 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "1 - Create tables"
+21:24:10.404 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+21:24:10.410 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V2__Server_discovery.sql ...
+21:24:10.411 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+21:24:10.411 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "2 - Server discovery" ...
+21:24:10.412 [pool-1-thread-5] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - Server discovery"
+21:24:10.412 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+21:24:10.413 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+21:24:10.413 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "2 - Server discovery"
+21:24:10.415 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+21:24:10.417 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V3__Jar_symbols.sql ...
+21:24:10.417 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+21:24:10.419 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 7: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+21:24:10.420 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 15: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+21:24:10.420 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "3 - Jar symbols" ...
+21:24:10.421 [pool-1-thread-5] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "3 - Jar symbols"
+21:24:10.421 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+21:24:10.424 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+21:24:10.425 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+21:24:10.430 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+21:24:10.430 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+21:24:10.431 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+21:24:10.431 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "3 - Jar symbols"
+21:24:10.432 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+21:24:10.434 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V4__Fingerprints.sql ...
+21:24:10.435 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+21:24:10.436 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "4 - Fingerprints" ...
+21:24:10.436 [pool-1-thread-5] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "4 - Fingerprints"
+21:24:10.436 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+21:24:10.437 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+21:24:10.438 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "4 - Fingerprints"
+21:24:10.439 [pool-1-thread-5] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+21:24:10.449 [pool-1-thread-5] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.020s)
+21:24:10.466 [pool-1-thread-5] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 39 of 100M
+3åé 11, 2024 9:44:13 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 1
+3åé 11, 2024 9:44:13 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 2
+2024.03.11 21:44:28 INFO  no build target found for C:\Users\iniad\workspace\mojipic\build.sc. Using presentation compiler with project's scala-library version: 3.3.1
+3åé 11, 2024 9:44:29 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 4
+2024.03.11 21:44:48 INFO  Detected new build tool in C:\Users\iniad\workspace\mojipic
+2024.03.11 21:44:48 WARN  no build target for: C:\Users\iniad\workspace\mojipic\build.sbt
+2024.03.11 21:44:48 WARN  Build server is not auto-connectable.
+2024.03.11 22:29:26 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/twitter/TwitterAuthenticator.scala
+2024.03.11 22:29:48 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\twitter\TwitterAuthenticator.scala
+2024.03.11 22:29:49 INFO  time: code lens generation in 2.21s
+2024.03.11 22:30:45 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/TwitterLoginController.scala
+2024.03.11 22:30:52 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\TwitterLoginController.scala
+2024.03.11 22:31:14 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/OAuthController.scala
+2024.03.11 22:31:19 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\OAuthController.scala
+3åé 11, 2024 10:36:25 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 96
+2024.03.11 22:36:27 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\HomeController.scala
+2024.03.11 22:36:29 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\HomeController.scala
+2024.03.11 22:36:58 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\HomeController.scala
+2024.03.11 22:37:15 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\HomeController.scala
+2024.03.11 22:37:18 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\HomeController.scala
+2024.03.11 22:37:22 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\HomeController.scala
+3åé 11, 2024 10:37:31 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 185
+2024.03.11 22:44:54 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/domain/entity/PictureId.scala
+2024.03.11 22:44:59 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureId.scala
+2024.03.11 22:45:10 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/domain/entity/TwitterId.scala
+2024.03.11 22:45:14 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\TwitterId.scala
+2024.03.11 22:45:22 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/domain/entity/PictureProperty.scala
+2024.03.11 22:45:27 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureProperty.scala
+2024.03.11 22:49:48 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/PictureController.scala
+2024.03.11 22:49:53 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.11 22:50:12 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\OAuthController.scala
+2024.03.11 22:50:24 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\OAuthController.scala
+2024.03.11 22:50:48 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/Module.scala
+2024.03.11 22:50:54 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.11 22:53:35 WARN  no build target for: C:\Users\iniad\workspace\mojipic\build.sbt
+2024.03.11 22:53:35 INFO  Detected new build tool in C:\Users\iniad\workspace\mojipic
+2024.03.11 22:53:35 WARN  Build server is not auto-connectable.
+2024.03.11 22:56:33 INFO  Shutting down server
+2024.03.11 22:56:33 INFO  shutting down Metals
+2024.03.11 22:56:33 INFO  Exiting server
+2024.03.12 15:11:16 INFO  Started: Metals version 1.2.2 in folders 'C:\Users\iniad\workspace\mojipic' for client Visual Studio Code 1.87.1.
+15:11:17.536 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+15:11:17.540 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+15:11:17.541 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+15:11:17.546 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+15:11:17.547 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@28c97a5 ...
+15:11:17.548 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+15:11:17.548 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+15:11:17.548 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@28c97a5 ...
+15:11:17.549 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/iniad/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+15:11:17.554 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+15:11:17.554 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+15:11:17.555 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+15:11:17.555 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+15:11:17.555 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+15:11:17.555 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+15:11:17.559 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:11:17.559 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+15:11:17.561 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+15:11:17.561 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+15:11:17.561 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+15:11:17.674 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:C:\Users\iniad\workspace\mojipic\.metals\metals (H2 2.2)
+15:11:17.674 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+15:11:17.674 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+15:11:17.675 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+15:11:17.675 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+15:11:17.683 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+15:11:17.684 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+15:11:17.685 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:11:17.697 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+15:11:17.703 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:11:17.716 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+15:11:17.716 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:11:17.716 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+15:11:17.716 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+15:11:17.716 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+15:11:17.717 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+15:11:17.717 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:11:17.717 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+15:11:17.717 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+15:11:17.717 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+15:11:17.731 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.032s)
+15:11:17.733 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+15:11:17.741 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+15:11:17.748 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+15:11:17.766 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 37 of 100M
+2024.03.12 15:11:37 INFO  no build target found for C:\Users\iniad\workspace\mojipic\build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
+3åé 12, 2024 3:11:41 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 2
+3åé 12, 2024 3:11:41 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 10
+2024.03.12 15:12:39 WARN  no build target for: C:\Users\iniad\workspace\mojipic\build.sbt
+2024.03.12 15:12:39 INFO  Detected new build tool in C:\Users\iniad\workspace\mojipic
+2024.03.12 15:12:39 WARN  Build server is not auto-connectable.
+2024.03.12 15:12:40 WARN  no build target for: C:\Users\iniad\workspace\mojipic\build.sbt
+2024.03.12 15:14:19 INFO  Detected new build tool in C:\Users\iniad\workspace\mojipic
+2024.03.12 15:14:19 WARN  Build server is not auto-connectable.
+3åé 12, 2024 3:14:21 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 50
+2024.03.12 15:14:22 WARN  no build target for: C:\Users\iniad\workspace\mojipic\build.sbt
+2024.03.12 15:14:22 INFO  Detected new build tool in C:\Users\iniad\workspace\mojipic
+2024.03.12 15:14:22 WARN  Build server is not auto-connectable.
+2024.03.12 15:14:24 WARN  no build target for: C:\Users\iniad\workspace\mojipic\build.sbt
+2024.03.12 15:14:24 INFO  Detected new build tool in C:\Users\iniad\workspace\mojipic
+2024.03.12 15:14:24 WARN  Build server is not auto-connectable.
+2024.03.12 15:15:10 WARN  no build target for: C:\Users\iniad\workspace\mojipic\build.sbt
+2024.03.12 15:15:10 INFO  Detected new build tool in C:\Users\iniad\workspace\mojipic
+2024.03.12 15:15:10 WARN  Build server is not auto-connectable.
+2024.03.12 15:15:12 INFO  Detected new build tool in C:\Users\iniad\workspace\mojipic
+2024.03.12 15:15:12 WARN  no build target for: C:\Users\iniad\workspace\mojipic\build.sbt
+2024.03.12 15:15:12 WARN  Build server is not auto-connectable.
+2024.03.12 15:15:15 WARN  no build target for: C:\Users\iniad\workspace\mojipic\build.sbt
+2024.03.12 15:15:15 INFO  Detected new build tool in C:\Users\iniad\workspace\mojipic
+2024.03.12 15:15:15 WARN  Build server is not auto-connectable.
+2024.03.12 15:17:30 INFO  Detected new build tool in C:\Users\iniad\workspace\mojipic
+2024.03.12 15:17:30 WARN  no build target for: C:\Users\iniad\workspace\mojipic\build.sbt
+2024.03.12 15:17:30 WARN  Build server is not auto-connectable.
+2024.03.12 15:17:40 WARN  no build target for: C:\Users\iniad\workspace\mojipic\build.sbt
+2024.03.12 15:17:40 INFO  Detected new build tool in C:\Users\iniad\workspace\mojipic
+2024.03.12 15:17:40 WARN  Build server is not auto-connectable.
+2024.03.12 15:18:08 INFO  Detected new build tool in C:\Users\iniad\workspace\mojipic
+2024.03.12 15:18:08 WARN  no build target for: C:\Users\iniad\workspace\mojipic\build.sbt
+2024.03.12 15:18:08 WARN  Build server is not auto-connectable.
+2024.03.12 15:35:36 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/domain/repository/PicturePropertyRepository.scala
+2024.03.12 15:35:42 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 15:35:43 INFO  time: code lens generation in 1.18s
+2024.03.12 15:36:19 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/repository/PicturePropertyRepositoryImpl.scala
+2024.03.12 15:36:27 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 15:36:44 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 15:36:52 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 15:37:02 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 15:37:04 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+3åé 12, 2024 3:37:04 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 251
+2024.03.12 15:37:07 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 15:37:10 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 15:37:19 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 15:37:22 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 15:38:59 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/redis/RedisKeys.scala
+2024.03.12 15:39:04 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\redis\RedisKeys.scala
+2024.03.12 15:39:20 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/app/controllers/PicturesController.scala
+2024.03.12 15:39:42 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/redis/RedisKeys.scala
+2024.03.12 15:39:42 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\redis\RedisKeys.scala
+2024.03.12 15:39:44 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/redis/RedisKeys.scala
+2024.03.12 15:40:11 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/PicturesController.scala
+2024.03.12 15:40:55 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/PicturesController.scala
+3åé 12, 2024 3:41:42 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 388
+3åé 12, 2024 3:41:42 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 390
+2024.03.12 15:41:43 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 15:41:51 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 15:42:13 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 15:42:18 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 15:42:28 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 15:42:31 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+3åé 12, 2024 3:45:06 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 490
+2024.03.12 15:50:40 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 15:51:28 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 15:52:09 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 15:52:10 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 15:52:12 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+3åé 12, 2024 3:52:16 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 576
+2024.03.12 15:52:17 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 15:52:24 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+3åé 12, 2024 3:52:29 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 603
+2024.03.12 15:52:41 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/redis/RedisKeys.scala
+3åé 12, 2024 4:01:46 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 659
+2024.03.12 16:01:47 WARN  Using indexes to guess the definition of PicturePropertyRepository
+2024.03.12 16:01:49 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 16:01:57 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 16:02:24 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 16:02:54 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/redis/RedisKeys.scala
+2024.03.12 16:04:28 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/redis/RedisKeys.scala
+2024.03.12 16:04:30 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\redis\RedisKeys.scala
+2024.03.12 16:04:31 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/redis/RedisKeys.scala
+2024.03.12 16:04:32 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\redis\RedisKeys.scala
+2024.03.12 16:04:31 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/redis/RedisKeys.scala
+2024.03.12 16:05:49 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/actor/ConvertPictureActor.scala
+2024.03.12 16:05:56 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:06:02 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:06:09 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+3åé 12, 2024 4:06:09 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 790
+3åé 12, 2024 4:06:09 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 793
+2024.03.12 16:06:09 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:06:31 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/actor/ActorScheduler.scala
+2024.03.12 16:06:35 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ActorScheduler.scala
+2024.03.12 16:06:54 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+3åé 12, 2024 4:07:00 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 845
+2024.03.12 16:07:01 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 16:07:08 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 16:07:16 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 16:07:17 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 16:07:29 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 16:07:34 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+3åé 12, 2024 4:07:48 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 915
+2024.03.12 16:07:52 WARN  no build target for: C:\Users\iniad\workspace\mojipic\build.sbt
+2024.03.12 16:07:52 INFO  Detected new build tool in C:\Users\iniad\workspace\mojipic
+2024.03.12 16:07:52 WARN  Build server is not auto-connectable.
+2024.03.12 16:09:00 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:09:21 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:09:29 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:09:56 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+3åé 12, 2024 4:10:16 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 1044
+3åé 12, 2024 4:10:18 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 1049
+2024.03.12 16:10:20 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:10:42 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:10:51 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:10:58 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:11:06 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:11:23 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:11:24 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:11:30 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:11:45 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:11:51 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:12:04 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:12:23 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:12:38 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:12:41 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:13:51 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 16:14:18 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:14:21 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:14:49 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:14:51 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+3åé 12, 2024 4:15:21 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 1361
+3åé 12, 2024 4:16:19 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 1369
+2024.03.12 16:16:22 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:16:28 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:16:34 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:16:46 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:16:56 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:16:59 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:17:02 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+3åé 12, 2024 4:17:15 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 1472
+2024.03.12 16:17:36 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 16:17:37 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 16:17:45 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 16:17:56 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 16:18:13 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:18:24 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:18:41 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/PropertiesController.scala
+2024.03.12 16:18:46 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PropertiesController.scala
+2024.03.12 16:19:00 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/UsersController.scala
+2024.03.12 16:19:04 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\UsersController.scala
+2024.03.12 16:19:48 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureId.scala
+2024.03.12 16:19:50 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureId.scala
+2024.03.12 16:19:59 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureId.scala
+2024.03.12 16:20:01 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureId.scala
+2024.03.12 16:20:09 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\TwitterId.scala
+2024.03.12 16:20:17 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\TwitterId.scala
+2024.03.12 16:20:29 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureProperty.scala
+2024.03.12 16:20:42 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureProperty.scala
+2024.03.12 16:20:45 WARN  Using indexes to guess the definition of Status
+2024.03.12 16:20:46 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureProperty.scala
+2024.03.12 16:20:48 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureProperty.scala
+2024.03.12 16:20:51 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureProperty.scala
+2024.03.12 16:21:03 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureProperty.scala
+2024.03.12 16:21:08 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureProperty.scala
+2024.03.12 16:21:12 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureProperty.scala
+2024.03.12 16:21:17 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureProperty.scala
+2024.03.12 16:21:19 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureProperty.scala
+2024.03.12 16:21:22 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureProperty.scala
+3åé 12, 2024 4:23:10 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 1873
+2024.03.12 16:23:16 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 16:23:22 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 16:24:44 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+3åé 12, 2024 4:25:37 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 1955
+2024.03.12 16:25:43 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:26:24 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:26:25 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:26:28 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:27:27 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:27:34 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:28:41 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:29:37 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:30:29 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:30:36 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:31:26 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:31:29 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:32:12 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+3åé 12, 2024 4:32:59 åﬂå„ org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+èÓïÒ: Unsupported notification method: $/setTrace
+2024.03.12 16:35:18 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:35:29 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:36:34 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:37:34 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:37:47 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:37:50 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:37:59 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:38:04 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:38:06 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:38:10 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:38:13 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:38:15 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:38:53 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:38:54 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+3åé 12, 2024 4:39:32 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 2407
+2024.03.12 16:39:46 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:40:30 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:40:36 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:40:39 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:40:43 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:41:23 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 16:42:02 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 16:42:05 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+3åé 12, 2024 4:43:56 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 2567
+2024.03.12 16:43:58 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureProperty.scala
+2024.03.12 16:44:07 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureProperty.scala
+2024.03.12 16:44:13 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureProperty.scala
+3åé 12, 2024 4:44:22 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 2604
+2024.03.12 16:44:32 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\TwitterId.scala
+2024.03.12 16:44:34 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\TwitterId.scala
+2024.03.12 16:44:37 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureId.scala
+2024.03.12 16:44:39 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\entity\PictureId.scala
+2024.03.12 16:44:58 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/UsersController.scala
+2024.03.12 16:44:59 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\UsersController.scala
+2024.03.12 16:44:59 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/UsersController.scala
+2024.03.12 16:45:08 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/PropertiesController.scala
+2024.03.12 16:45:08 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PropertiesController.scala
+2024.03.12 16:45:09 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/PropertiesController.scala
+2024.03.12 16:45:47 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:45:59 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:46:17 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 16:46:29 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 16:46:33 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 16:46:36 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 16:46:38 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 16:46:51 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 16:48:30 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/PropertiesController.scala
+2024.03.12 16:48:47 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:48:56 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:48:59 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:49:03 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+3åé 12, 2024 4:49:24 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 2931
+3åé 12, 2024 4:49:42 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 2945
+2024.03.12 16:50:11 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:50:16 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:50:18 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:50:21 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:50:24 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:50:32 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:52:18 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 16:52:20 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+3åé 12, 2024 4:52:50 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 3097
+3åé 12, 2024 4:52:52 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 3104
+2024.03.12 16:53:09 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:53:26 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:53:36 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+3åé 12, 2024 4:53:51 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 3160
+3åé 12, 2024 4:53:51 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 3161
+2024.03.12 16:53:53 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 16:53:56 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+3åé 12, 2024 4:54:26 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 3195
+2024.03.12 16:54:27 WARN  Using indexes to guess the definition of TwitterId
+2024.03.12 16:54:29 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+3åé 12, 2024 4:54:30 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 3213
+2024.03.12 16:54:30 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/PropertiesController.scala
+2024.03.12 16:54:35 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/UsersController.scala
+2024.03.12 16:54:46 WARN  Using indexes to guess the definition of PictureProperty
+2024.03.12 16:54:47 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+3åé 12, 2024 4:54:48 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 3273
+3åé 12, 2024 4:54:49 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 3280
+3åé 12, 2024 4:54:50 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 3288
+3åé 12, 2024 4:54:56 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 3303
+3åé 12, 2024 4:54:58 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 3304
+3åé 12, 2024 4:55:00 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 3311
+2024.03.12 16:55:08 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:56:15 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/actor/ConvertPictureActor.scala
+2024.03.12 16:56:15 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 16:56:15 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/actor/ConvertPictureActor.scala
+2024.03.12 16:56:25 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/actor/ActorScheduler.scala
+2024.03.12 16:56:26 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ActorScheduler.scala
+2024.03.12 16:56:26 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/actor/ActorScheduler.scala
+2024.03.12 16:56:50 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+3åé 12, 2024 4:57:09 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 3429
+2024.03.12 16:57:21 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 16:57:28 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 16:57:56 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 16:58:24 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/actor/ConvertPictureActor.scala
+2024.03.12 16:58:25 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/actor/ActorScheduler.scala
+2024.03.12 16:58:31 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/PropertiesController.scala
+2024.03.12 16:59:23 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/actor/ConvertPictureActor.scala
+2024.03.12 16:59:54 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 17:00:00 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 17:00:12 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 17:00:20 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 17:00:35 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 17:01:03 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 17:01:14 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\actor\ConvertPictureActor.scala
+2024.03.12 17:01:48 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 17:02:10 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 17:02:12 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 17:02:15 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 17:02:46 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 17:03:37 WARN  Using indexes to guess the definition of TwitterId
+2024.03.12 17:03:38 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 17:03:39 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 17:03:40 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+3åé 12, 2024 5:04:18 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 3820
+2024.03.12 17:04:52 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 17:05:15 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 17:05:17 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 17:05:25 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+2024.03.12 17:05:39 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\controllers\PictureController.scala
+3åé 12, 2024 5:05:55 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 3900
+2024.03.12 17:06:04 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 17:06:49 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 17:06:59 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 17:07:28 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/domain/repository/PicturePropertyRepository.scala
+2024.03.12 17:07:29 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 17:07:29 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/domain/repository/PicturePropertyRepository.scala
+2024.03.12 17:07:31 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/domain/repository/PicturePropertyRepository.scala
+2024.03.12 17:07:32 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 17:07:32 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/domain/repository/PicturePropertyRepository.scala
+2024.03.12 17:07:33 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\domain\repository\PicturePropertyRepository.scala
+2024.03.12 17:07:46 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 17:07:48 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 17:07:48 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/repository/PicturePropertyRepositoryImpl.scala
+3åé 12, 2024 5:07:52 åﬂå„ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+åxçê: Unmatched cancel notification for request id 4046
+2024.03.12 17:07:52 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/infrastructure/repository/PicturePropertyRepositoryImpl.scala
+2024.03.12 17:07:53 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\infrastructure\repository\PicturePropertyRepositoryImpl.scala
+2024.03.12 17:08:41 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/controllers/PropertiesController.scala
+2024.03.12 17:09:54 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/Module.scala
+2024.03.12 17:09:55 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 17:09:54 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/Module.scala
+2024.03.12 17:09:57 WARN  Could not find semantic tokens for: file:///C:/Users/iniad/workspace/mojipic/app/Module.scala
+2024.03.12 17:09:59 WARN  no build target for: C:\Users\iniad\workspace\mojipic\app\Module.scala
+2024.03.12 17:11:24 INFO  Shutting down server
+2024.03.12 17:11:24 INFO  shutting down Metals
+2024.03.12 17:11:24 INFO  Exiting server
